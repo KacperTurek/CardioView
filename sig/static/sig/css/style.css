@@ -1,0 +1,17 @@
+.nav a{
+  font-size: 1.15em !important;
+}
+
+.nav li{
+  padding-right:10px;
+}
+
+.navbar-brand{
+  color: #ef0808 !important;
+  font-family: Georgia,Times,Times New Roman,serif;
+}
+
+.btn-danger{
+    background-color: #ef0808;
+    font-size: 1.2em !important;
+}

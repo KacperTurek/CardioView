@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "sig/base.html" %}
+  {% block body_block %}
+    <form action="{% url 'signal_plot' %}" method="POST">
+        {% csrf_token %}
+        <div class="container">
+          <br><legend>Choose signal to load:</legend><br>
+          <div class="form-group">
+              <p>Database</p>
+              <select class="form-control" name="database_id">
+                  <option value="1">MIT-BIH Arrhythmia Database</option>
+                  <option value="2">MIT-BIH Supraventricular Arrhythmia Database</option>
+              </select><br><br>
+              <p>Signal number:</p>
+              <select class="form-control" name="signal_display">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select><br><br>
+              <input type="submit" class="btn btn-danger" value="Load signal">
+          </div>
+        </div>
+    </form>
+{% endblock %}
